@@ -9,8 +9,8 @@ public class Main {
         int Shuttle;
         for (Shuttle = 1; Shuttle < 999; Shuttle++) {
 
-            if (Shuttle / 10 == 4 || Shuttle % 10 == 4 || Shuttle / 10 % 10 == 4 || Shuttle / 10 == 9
-                    || Shuttle % 10 == 9 || Shuttle / 10 % 10 == 9) {
+            if (Shuttle / 10 == 4 || Shuttle % 10 == 4 || Shuttle / 10 % 10 == 4 || Shuttle / 100 == 4 ||
+                    Shuttle / 10 == 9 || Shuttle % 10 == 9 || Shuttle / 10 % 10 == 9 || Shuttle / 100 == 9) {
                 continue;
 
             }
