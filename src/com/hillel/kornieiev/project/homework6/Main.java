@@ -143,18 +143,28 @@ public class Main {
                 teamTwoPlayer4Kills + teamTwoPlayer5Kills;
         System.out.println(totalNumberOfKillsTeamTwo + " - Всього фрагів на команду " + teamTwoName);
 
+        int midAriTeamOne = (totalNumberOfKillsTeamOne/5);
+        int midAriTeamTwo = (totalNumberOfKillsTeamTwo/5);
+        System.out.println();
+        System.out.println("Середня кількість фрагів " + teamOneName + " - " + midAriTeamOne);
+        System.out.println("Середня кількість фрагів " + teamTwoName + " - " + midAriTeamTwo);
+
         // Result.
 
         System.out.println();
         System.out.println("Підсумок матчу!");
-        if (totalNumberOfKillsTeamOne > totalNumberOfKillsTeamTwo) {
-        System.out.println("Перемогла команда " + teamOneName + " набравши "
-                + totalNumberOfKillsTeamOne + " очків.");
-        } else {
+        if (totalNumberOfKillsTeamOne == totalNumberOfKillsTeamTwo) {
+            System.out.println("Нічия - Команди набрали однакову кількість очок.");
+            System.out.print(teamOneName + " :" + totalNumberOfKillsTeamOne + " / "
+                    + teamTwoName + " :" + totalNumberOfKillsTeamTwo + " очок.");
+
+        } else if (totalNumberOfKillsTeamOne < totalNumberOfKillsTeamTwo) {
             System.out.println("Перемогла команда " + teamTwoName + " набравши "
-                    + totalNumberOfKillsTeamTwo + " очків.");
+                    + totalNumberOfKillsTeamTwo + " очок.");
+
+        } else {
+            System.out.println("Перемогла команда " + teamOneName + " набравши "
+                    + totalNumberOfKillsTeamOne + " очок.");
         }
-
     }
-
 }
