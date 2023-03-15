@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println();
         MusicStyles[] music = {
                 new ClassicMusic("Mozart"),
                 new PopMusic("Sia"),
