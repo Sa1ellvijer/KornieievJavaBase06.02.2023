@@ -2,13 +2,15 @@ package com.hillel.kornieiev.project.homework15;
 
 public class RockMusic extends MusicStyles {
 
+    private final String rockBand;
+
     public RockMusic(String rockBand) {
-        super();
+        this.rockBand = rockBand;
     }
 
     @Override
     void playMusic () {
-        System.out.println("Playing Rock: ");
+        System.out.println("Playing Rock: " + rockBand);
 
     }
 }
