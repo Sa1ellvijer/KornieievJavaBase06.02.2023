@@ -19,7 +19,7 @@ public class Androids implements Smartphones, Linux {
 
     @Override
     public void linuxOS(String linuxVer){
-        System.out.println("Setting up LinuxOS" + linuxVer);
+        System.out.println("Setting up LinuxOS: " + linuxVer);
     }
 
 }
