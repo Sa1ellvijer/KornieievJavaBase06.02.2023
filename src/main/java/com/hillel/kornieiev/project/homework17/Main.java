@@ -17,11 +17,11 @@ public class Main {
         while (true) {
             boolean stop = false;
 
-            while (true){
+            while (true) {
                 System.out.println("Please, make a choice: " + Arrays.toString(drinksMachines));
                 String userEnter = scanner.nextLine();
 
-                if (userEnter.equals("STOP")) {
+                if (userEnter.toUpperCase().equals("STOP")) {
                     stop = true;
                     break;
                 }
@@ -36,7 +36,10 @@ public class Main {
                 if (orderDrinks != null) {
                     break;
                 } else {
+                    System.out.println();
                     System.out.println("Incorrect entry - Try Again!");
+                    System.out.println("To terminate the operation, write >STOP<");
+                    System.out.println();
                 }
             }
 
